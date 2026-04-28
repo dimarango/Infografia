@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Dilema de la Escritura sin Pensamiento</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <main class="page">
+    <header class="main-title">
+      <h1>El Dilema de la Escritura sin Pensamiento: ¿Herramienta o Muleta Cognitiva?</h1>
+    </header>
+
+    <section class="infographic">
+
+      <!-- BLOQUE IZQUIERDO -->
+      <section class="block risk-block" aria-labelledby="riskTitle">
+        <div class="block-title risk-title" id="riskTitle">
+          Riesgo de la Automatización Intelectual
+        </div>
+
+        <div class="cards four-cards">
+          <article class="info-card risk-card">
+            <div class="card-visual">🤖⌨️</div>
+            <h2>Delegación del pensamiento y “muleta cognitiva”</h2>
+            <button class="popup-trigger risk-button" data-popup="eje1">Ampliar información</button>
+          </article>
+
+          <article class="info-card risk-card">
+            <div class="card-visual">🧠🩼</div>
+            <h2>El riesgo de atrofia cognitiva</h2>
+            <button class="popup-trigger risk-button" data-popup="eje2">Ampliar información</button>
+          </article>
+
+          <article class="info-card risk-card">
+            <div class="card-visual">👥📄</div>
+            <h2>Pérdida de la densidad moral e identidad</h2>
+            <button class="popup-trigger risk-button" data-popup="eje3">Ampliar información</button>
+          </article>
+
+          <article class="info-card risk-card">
+            <div class="card-visual">🧾➡️🔎</div>
+            <h2>Transformación de autor a “decodificador”</h2>
+            <button class="popup-trigger risk-button" data-popup="eje4">Ampliar información</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- BLOQUE CENTRAL -->
+      <section class="block center-block" aria-labelledby="centerTitle">
+        <div class="center-top" id="centerTitle">
+          <div class="brain-composition" aria-label="Comparación visual entre escritura sin pensamiento y escritura humana">
+            <button class="brain brain-ai popup-trigger" data-popup="definicion" type="button">
+              <span class="brain-icon">⚙️</span>
+              <span class="brain-caption">Escritura sin pensamiento<br><strong>producto final: “qué”</strong></span>
+            </button>
+
+            <div class="brain-divider" aria-hidden="true"></div>
+
+            <button class="brain brain-human popup-trigger" data-popup="humano" type="button">
+              <span class="brain-icon">🌱</span>
+              <span class="brain-caption">Escritura humana<br><strong>proceso ético: “porqué”</strong></span>
+            </button>
+          </div>
+        </div>
+
+        <section class="comparison">
+          <div class="comparison-title">COMPARACIÓN DEL PROCESO</div>
+
+          <div class="comparison-grid">
+            <div class="comparison-col human-col">
+              <h2>🧠 Escritura Humana</h2>
+
+              <div class="comparison-row">
+                <strong>Rol del autor:</strong>
+                <span>Arquitecto del discurso</span>
+              </div>
+
+              <div class="comparison-row">
+                <strong>Efecto:</strong>
+                <span>Construcción de identidad y juicio moral</span>
+              </div>
+            </div>
+
+            <div class="comparison-col ai-col">
+              <h2>🤖 Escritura sin Pensamiento</h2>
+
+              <div class="comparison-row">
+                <strong>Rol del autor:</strong>
+                <span>Decodificador de información</span>
+              </div>
+
+              <div class="comparison-row">
+                <strong>Efecto:</strong>
+                <span>Homogeneización del juicio</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="center-actions">
+          <button class="popup-trigger conclusion-button" data-popup="conclusiones">Ampliar conclusiones</button>
+
+          <div class="activity-panel">
+            <h2>Actividades evaluativas</h2>
+            <div class="activity-buttons">
+              <button id="openActivity1" type="button">Actividad 1</button>
+              <button id="openActivity2" type="button">Actividad 2</button>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- BLOQUE DERECHO -->
+      <section class="block recommendation-block" aria-labelledby="recommendationTitle">
+        <div class="block-title recommendation-title" id="recommendationTitle">
+          Recomendaciones para una resistencia intelectual
+        </div>
+
+        <div class="cards four-cards">
+          <article class="info-card recommendation-card">
+            <div class="card-visual">📖👁️</div>
+            <h2>Desarrollar Literacidades Digitales Críticas</h2>
+            <button class="popup-trigger recommendation-button" data-popup="rec1">Ampliar información</button>
+          </article>
+
+          <article class="info-card recommendation-card">
+            <div class="card-visual">❓🧠</div>
+            <h2>Privilegiar el “porqué” sobre el “qué”</h2>
+            <button class="popup-trigger recommendation-button" data-popup="rec2">Ampliar información</button>
+          </article>
+
+          <article class="info-card recommendation-card">
+            <div class="card-visual">⏳📚🌳</div>
+            <h2>Fomentar el “Slow Learning”</h2>
+            <button class="popup-trigger recommendation-button" data-popup="rec3">Ampliar información</button>
+          </article>
+
+          <article class="info-card recommendation-card">
+            <div class="card-visual">🤝⚖️</div>
+            <h2>Transparencia y supervisión experta</h2>
+            <button class="popup-trigger recommendation-button" data-popup="rec4">Ampliar información</button>
+          </article>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- POPUP GENERAL -->
+  <div class="modal hidden" id="infoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-window">
+      <button class="close-btn" id="closeInfo" type="button" aria-label="Cerrar ventana emergente">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- ACTIVIDAD 1 -->
+  <div class="modal hidden" id="activity1Modal" role="dialog" aria-modal="true">
+    <div class="modal-window large-window">
+      <button class="close-btn" id="closeActivity1" type="button" aria-label="Cerrar actividad">×</button>
+      <h2>Actividad 1: Selección múltiple</h2>
+      <p class="instruction">Selecciona una opción por pregunta y presiona “Calificar”.</p>
+      <form id="activity1Form" class="quiz-form"></form>
+      <button class="grade-btn" id="gradeActivity1" type="button">Calificar</button>
+      <div id="activity1Result"></div>
+    </div>
+  </div>
+
+  <!-- ACTIVIDAD 2 -->
+  <div class="modal hidden" id="activity2Modal" role="dialog" aria-modal="true">
+    <div class="modal-window large-window">
+      <button class="close-btn" id="closeActivity2" type="button" aria-label="Cerrar actividad">×</button>
+      <h2>Actividad 2: Verdadero o falso</h2>
+      <p class="instruction">Marca verdadero o falso y presiona “Calificar”.</p>
+      <form id="activity2Form" class="quiz-form"></form>
+      <button class="grade-btn" id="gradeActivity2" type="button">Calificar</button>
+      <div id="activity2Result"></div>
+    </div>
+  </div>
+</body>
+</html>
