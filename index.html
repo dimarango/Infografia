@@ -3,174 +3,237 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Infografía: Mi cultura del cuidado y perfil profesional</title>
+  <meta name="description" content="Proyecto de vida de Diana Arango: perfil actual, perfil proyectado y plan de acción." />
+  <title>Mi proyecto de vida | Diana Arango</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="app.js" defer></script>
 </head>
 
 <body>
   <main class="page">
-    <header class="main-title">
-      <p class="eyebrow">Mi cultura del cuidado</p>
-      <h1>Una forma de servir y crecer como profesional</h1>
-      <p class="subtitle">Una reflexión personal sobre cómo el cuidado, la dignidad, la escucha y el servicio fortalecen mi formación como estudiante y futura profesional.</p>
+    <header class="hero">
+      <div class="photo-frame">
+        <!-- FOTO: guarda tu imagen en assets/foto-diana.jpg -->
+        <img id="profilePhoto" src="assets/foto-diana.jpg" alt="Fotografía de Diana Arango" />
+        <div class="photo-placeholder" id="photoPlaceholder" aria-hidden="true">
+          <span>📷</span>
+          <strong>Aquí va mi foto</strong>
+          <small>assets/foto-diana.jpg</small>
+        </div>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">MI PROYECTO DE VIDA</p>
+        <h1>Diana Arango</h1>
+        <p class="life-phrase">“Aprender, enseñar y superar retos para transformar mi vida y aportar con conocimiento a los demás.”</p>
+        <div class="identity-tags" aria-label="Rasgos que me identifican">
+          <span>Docente</span>
+          <span>Aprendiz permanente</span>
+          <span>Creativa</span>
+          <span>Perseverante</span>
+        </div>
+      </div>
     </header>
 
-    <section class="infographic">
-      <section class="block left-block" aria-labelledby="leftTitle">
-        <div class="block-title left-title" id="leftTitle">Mi perfil profesional desde el cuidado</div>
-
-        <div class="cards four-cards">
-          <article class="info-card left-card">
-            <div class="card-visual">🤲🌎</div>
-            <h2>Me reconozco en relación con otros</h2>
-            <p>Entiendo que mi profesión no se construye de manera aislada, sino en relación con las personas que acompaño.</p>
-            <button class="popup-trigger left-button" data-popup="perfil1">Ampliar reflexión</button>
-          </article>
-
-          <article class="info-card left-card">
-            <div class="card-visual">⚖️💚</div>
-            <h2>Cuidar también es actuar con justicia</h2>
-            <p>Para mí, servir implica reconocer la dignidad de cada persona y responder con responsabilidad ética.</p>
-            <button class="popup-trigger left-button" data-popup="perfil2">Ampliar reflexión</button>
-          </article>
-
-          <article class="info-card left-card">
-            <div class="card-visual">🫀🧠🕊️</div>
-            <h2>Miro a la persona de forma integral</h2>
-            <p>El cuidado me invita a comprender que las necesidades humanas no son solo físicas, sino también sociales y espirituales.</p>
-            <button class="popup-trigger left-button" data-popup="perfil3">Ampliar reflexión</button>
-          </article>
-
-          <article class="info-card left-card">
-            <div class="card-visual">🧭✨</div>
-            <h2>Quiero servir con honradez</h2>
-            <p>Mi formación debe reflejarse en acciones honestas, dignificadoras y capaces de aportar reconciliación.</p>
-            <button class="popup-trigger left-button" data-popup="perfil4">Ampliar reflexión</button>
-          </article>
-        </div>
-      </section>
-
-      <section class="block center-block" aria-labelledby="centerTitle">
-        <div class="center-top" id="centerTitle">
-          <div class="care-composition" aria-label="Cultura del cuidado como centro del servicio">
-            <button class="care-node popup-trigger" data-popup="definicion" type="button">
-              <span class="care-icon">💞</span>
-              <span class="care-caption">Mi cultura del cuidado<br><strong>ética que dignifica</strong></span>
-            </button>
-            <div class="care-divider" aria-hidden="true"></div>
-            <button class="care-node service-node popup-trigger" data-popup="motor" type="button">
-              <span class="care-icon">🤝</span>
-              <span class="care-caption">Mi servicio<br><strong>acción que transforma</strong></span>
-            </button>
+    <section class="infographic" aria-label="Proyecto de vida de Diana Arango">
+      <aside class="profiles-column">
+        <section class="profile-panel real-panel" aria-labelledby="realTitle">
+          <div class="section-heading">
+            <span class="heading-icon">◉</span>
+            <div>
+              <p>Mi punto de partida</p>
+              <h2 id="realTitle">Yo real</h2>
+            </div>
           </div>
-        </div>
 
-        <section class="comparison">
-          <div class="comparison-title">DEL CUIDADO AL SERVICIO</div>
+          <div class="dimension-list">
+            <article class="dimension-card">
+              <span class="dimension-icon">🌿</span>
+              <div>
+                <h3>Personal</h3>
+                <p>Soy curiosa, perseverante y disfruto superar retos. El deporte, las manualidades, la lectura de superación personal, la pintura, el dibujo y conocer nuevos lugares alimentan mi bienestar y creatividad. Aún siento inseguridad al hablar en público y, en ocasiones, el miedo limita la fuerza con la que expreso mis ideas.</p>
+              </div>
+            </article>
 
-          <div class="comparison-grid">
-            <div class="comparison-col human-col">
-              <h2>🌱 Lo que quiero practicar</h2>
-              <div class="comparison-row"><strong>Base:</strong><span>Escucha, respeto y atención a cada realidad personal</span></div>
-              <div class="comparison-row"><strong>Relación:</strong><span>Autonomía, corresponsabilidad y dignidad</span></div>
-              <div class="comparison-row"><strong>Resultado:</strong><span>Vínculos restaurados y comunidad solidaria</span></div>
-            </div>
+            <article class="dimension-card">
+              <span class="dimension-icon">🎓</span>
+              <div>
+                <h3>Académica</h3>
+                <p>Estudio virtualmente Ingeniería de Sistemas en la Corporación Universitaria Minuto de Dios y curso la Técnica como Asistente en Contabilidad. Mantengo una actitud de aprendizaje constante mientras combino mis estudios con el trabajo y la práctica.</p>
+              </div>
+            </article>
 
-            <div class="comparison-col ai-col">
-              <h2>🚫 Lo que debo evitar</h2>
-              <div class="comparison-row"><strong>Base:</strong><span>Paternalismo, indiferencia o autoritarismo</span></div>
-              <div class="comparison-row"><strong>Relación:</strong><span>Ayudar sin escuchar ni reconocer al otro</span></div>
-              <div class="comparison-row"><strong>Resultado:</strong><span>Dependencia, distancia social y pérdida de sentido</span></div>
-            </div>
+            <article class="dimension-card">
+              <span class="dimension-icon">🤝</span>
+              <div>
+                <h3>Social</h3>
+                <p>Me relaciono con otras personas principalmente mediante la docencia, el estudio y el trabajo. Disfruto compartir lo que sé y aprender de otros, aunque deseo comunicarme con mayor seguridad y hacer más visible mi voz en espacios académicos y empresariales.</p>
+              </div>
+            </article>
+
+            <article class="dimension-card">
+              <span class="dimension-icon">📊</span>
+              <div>
+                <h3>Profesional</h3>
+                <p>Llevo 11 años como docente universitaria en Estadística y Matemáticas. Actualmente también realizo mi práctica en el área contable de una empresa de servicios de restaurante. Esta experiencia amplía mi perfil, pero todavía no cuento con la estabilidad ni el nivel salarial que deseo.</p>
+              </div>
+            </article>
           </div>
         </section>
 
-        <section class="center-actions">
-          <button class="popup-trigger conclusion-button" data-popup="conclusiones">Ver mis conclusiones</button>
-
-          <div class="activity-panel">
-            <h2>Actividades evaluativas</h2>
-            <div class="activity-buttons">
-              <button id="openActivity1" type="button">Actividad 1</button>
-              <button id="openActivity2" type="button">Actividad 2</button>
+        <section class="profile-panel ideal-panel" aria-labelledby="idealTitle">
+          <div class="section-heading">
+            <span class="heading-icon">✦</span>
+            <div>
+              <p>La persona que estoy construyendo</p>
+              <h2 id="idealTitle">Yo ideal</h2>
             </div>
           </div>
+
+          <div class="goal-grid">
+            <article class="goal-card">
+              <span>01</span>
+              <h3>Meta personal</h3>
+              <p>Fortalecer mi seguridad y mi expresión oral durante los próximos 12 meses, practicando al menos dos intervenciones o exposiciones mensuales y manteniendo tres espacios semanales de actividad física o bienestar creativo.</p>
+            </article>
+
+            <article class="goal-card">
+              <span>02</span>
+              <h3>Meta académica</h3>
+              <p>Completar satisfactoriamente mi Técnica como Asistente en Contabilidad y avanzar sin interrupciones en Ingeniería de Sistemas, construyendo en los próximos 12 meses un portafolio con tres proyectos que integren programación, datos y procesos contables.</p>
+            </article>
+
+            <article class="goal-card">
+              <span>03</span>
+              <h3>Meta social</h3>
+              <p>Participar cada mes en al menos un espacio académico, profesional o colaborativo en el que comparta una idea, explique un tema o presente un resultado, fortaleciendo mis relaciones y mi capacidad de aportar con argumentos.</p>
+            </article>
+
+            <article class="goal-card">
+              <span>04</span>
+              <h3>Meta profesional</h3>
+              <p>Conseguir, en un plazo máximo de 24 meses, un empleo empresarial de tiempo completo y contrato indefinido en el que aplique mis conocimientos en sistemas, datos o contabilidad, con un ingreso al menos 40 % superior al actual, y continuar como docente de cátedra.</p>
+            </article>
+          </div>
         </section>
-      </section>
+      </aside>
 
-      <section class="block right-block" aria-labelledby="rightTitle">
-        <div class="block-title right-title" id="rightTitle">Mi experiencia, mi servicio y Minuto de Dios</div>
+      <section class="action-column" aria-labelledby="purposeTitle">
+        <div class="section-heading center-heading">
+          <span class="heading-icon">➜</span>
+          <div>
+            <p>Cómo acercaré mi presente a mi futuro</p>
+            <h2 id="purposeTitle">Propósito, impacto y plan de acción</h2>
+          </div>
+        </div>
 
-        <div class="cards four-cards">
-          <article class="info-card right-card">
-            <div class="card-visual">👩‍👧‍👦🌟</div>
-            <h2>Mi referente: tía Luz Doris</h2>
-            <p>Su forma de ayudar con amor y persistencia inspira mi manera de comprender el servicio.</p>
-            <button class="popup-trigger right-button" data-popup="vida1">Ampliar reflexión</button>
+        <section class="purpose-statement">
+          <p class="purpose-label">Mi propósito de vida</p>
+          <blockquote>Integrar mi vocación docente con la tecnología, el análisis y los conocimientos contables para crecer profesionalmente, resolver problemas reales y compartir aprendizajes que también impulsen a otras personas.</blockquote>
+        </section>
+
+        <div class="impact-grid">
+          <article class="impact-card personal-impact">
+            <div class="impact-title">
+              <span>♥</span>
+              <h3>Impacto personal</h3>
+            </div>
+            <p>Alcanzar mayor seguridad, autonomía económica y estabilidad. Sentirme capaz de asumir retos, defender mis ideas con argumentos y disfrutar un equilibrio sostenible entre trabajo, estudio, docencia y bienestar.</p>
           </article>
 
-          <article class="info-card right-card">
-            <div class="card-visual">👐🕯️</div>
-            <h2>El arte de cuidar</h2>
-            <p>Aprendo que cuidar también significa acompañar la fragilidad del otro con generosidad.</p>
-            <button class="popup-trigger right-button" data-popup="vida2">Ampliar reflexión</button>
-          </article>
-
-          <article class="info-card right-card">
-            <div class="card-visual">🏘️🕊️</div>
-            <h2>Reconciliación y fraternidad</h2>
-            <p>Desde Minuto de Dios, entiendo que servir también es ayudar a reconstruir comunidad.</p>
-            <button class="popup-trigger right-button" data-popup="md1">Ampliar reflexión</button>
-          </article>
-
-          <article class="info-card right-card">
-            <div class="card-visual">🌾🛠️</div>
-            <h2>Obras con sentido social</h2>
-            <p>El servicio se vuelve real cuando se transforma en acciones concretas para quienes más lo necesitan.</p>
-            <button class="popup-trigger right-button" data-popup="md2">Ampliar reflexión</button>
+          <article class="impact-card social-impact">
+            <div class="impact-title">
+              <span>∞</span>
+              <h3>Impacto social</h3>
+            </div>
+            <p>Enriquecer la formación de mis estudiantes con experiencias reales del sector empresarial, aportar soluciones útiles en los equipos donde trabaje e inspirar a otros mediante el aprendizaje continuo y la superación de los propios límites.</p>
           </article>
         </div>
-      </section>
-    </section>
 
-    <section class="references" aria-labelledby="referencesTitle">
-      <h2 id="referencesTitle">Referencias</h2>
-      <p>Estévez López, E. y Depalma, P. (eds). (2023). <em>Ventanas a la sinodalidad</em> (pp. 75-91). Editorial Verbo Divino.</p>
-      <p>García Herreros, R. (2009b). Brotará del Corazón. En <em>Artesanos de paz</em>. Colección Obras Completas No. 18 (pp. 238). Corporación Centro Carismático Minuto de Dios.</p>
-      <p>García Herreros, R. (2009c). Invitación a Reconciliarnos. En <em>Artesanos de paz</em>. Colección Obras Completas No. 18 (pp. 243). Corporación Centro Carismático Minuto de Dios.</p>
-      <p>García Herreros, R. (2012). Estrategia para el cambio. En <em>Colombia para Cristo</em>. Colección Obras Completas No. 27 (pp. 21-22). Corporación Centro Carismático Minuto de Dios.</p>
-      <p>García Herreros, R. (2012b). La novedad eterna. En <em>Colombia para Cristo</em>. Colección Obras Completas No. 27 (pp. 70-71). Corporación Centro Carismático Minuto de Dios.</p>
+        <section class="roadmap" aria-labelledby="roadmapTitle">
+          <div class="roadmap-header">
+            <div>
+              <p>Acciones específicas y medibles</p>
+              <h3 id="roadmapTitle">Mi ruta de avance</h3>
+            </div>
+            <span class="route-badge">24 meses</span>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-marker">1</div>
+              <div class="timeline-content">
+                <div class="timeline-topline">
+                  <h4>Seguridad personal y comunicación</h4>
+                  <span>Desde ahora · revisión mensual</span>
+                </div>
+                <ul>
+                  <li>Preparar y realizar dos intervenciones orales al mes en clases, reuniones o espacios académicos.</li>
+                  <li>Grabar una práctica mensual de cinco minutos y evaluar claridad, postura, voz y solidez de los argumentos.</li>
+                  <li>Mantener tres espacios semanales para deporte, pintura, dibujo, lectura o manualidades.</li>
+                </ul>
+                <p class="indicator"><strong>Indicador:</strong> 24 prácticas orales y cumplimiento mínimo del 80 % de la rutina de bienestar al finalizar el primer año.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-marker">2</div>
+              <div class="timeline-content">
+                <div class="timeline-topline">
+                  <h4>Formación aplicada</h4>
+                  <span>0–12 meses</span>
+                </div>
+                <ul>
+                  <li>Dedicar al menos seis horas semanales adicionales al estudio y registrar el avance cada domingo.</li>
+                  <li>Crear tres proyectos de portafolio: automatización de un proceso contable, análisis estadístico de datos y una aplicación sencilla.</li>
+                  <li>Documentar cada proyecto con objetivo, procedimiento, código y resultado para mostrar las habilidades adquiridas.</li>
+                </ul>
+                <p class="indicator"><strong>Indicador:</strong> técnica terminada, asignaturas aprobadas y tres proyectos publicados o listos para presentar.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-marker">3</div>
+              <div class="timeline-content">
+                <div class="timeline-topline">
+                  <h4>Visibilidad y relaciones profesionales</h4>
+                  <span>1–18 meses</span>
+                </div>
+                <ul>
+                  <li>Participar una vez al mes en un evento, comunidad, charla o actividad relacionada con tecnología, datos, educación o contabilidad.</li>
+                  <li>Actualizar cada trimestre la hoja de vida, el perfil profesional y el portafolio con resultados verificables.</li>
+                  <li>Contactar o conversar con dos profesionales al mes para conocer roles, competencias y oportunidades del sector empresarial.</li>
+                </ul>
+                <p class="indicator"><strong>Indicador:</strong> 12 participaciones anuales, cuatro actualizaciones del perfil y 24 nuevos contactos profesionales relevantes.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-marker">4</div>
+              <div class="timeline-content">
+                <div class="timeline-topline">
+                  <h4>Transición al sector empresarial</h4>
+                  <span>6–24 meses</span>
+                </div>
+                <ul>
+                  <li>Identificar cinco cargos objetivo y comparar mensualmente sus requisitos con mis competencias actuales.</li>
+                  <li>Desde el sexto mes, presentar al menos cuatro postulaciones de calidad al mes y registrar respuestas y aprendizajes.</li>
+                  <li>Practicar una entrevista mensual y conservar la docencia por horas como espacio de vocación y actualización.</li>
+                </ul>
+                <p class="indicator"><strong>Indicador:</strong> mínimo 72 postulaciones enfocadas, 18 simulaciones de entrevista y vinculación indefinida antes del mes 24.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="closing-box">
+          <span>Mi compromiso</span>
+          <p>No necesito convertirme en otra persona: necesito organizar, fortalecer y hacer visible todo lo que ya he construido. Cada acción constante reducirá la distancia entre la profesional que soy hoy y la mujer segura, estable y empoderada que quiero llegar a ser.</p>
+        </section>
+      </section>
     </section>
   </main>
 
-  <div class="modal hidden" id="infoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal-window">
-      <button class="close-btn" id="closeInfo" type="button" aria-label="Cerrar ventana emergente">×</button>
-      <div id="modalContent"></div>
-    </div>
-  </div>
-
-  <div class="modal hidden" id="activity1Modal" role="dialog" aria-modal="true">
-    <div class="modal-window large-window">
-      <button class="close-btn" id="closeActivity1" type="button" aria-label="Cerrar actividad">×</button>
-      <h2>Actividad 1: Selección múltiple</h2>
-      <p class="instruction">Selecciona una opción por pregunta y presiona “Calificar”.</p>
-      <form id="activity1Form" class="quiz-form"></form>
-      <button class="grade-btn" id="gradeActivity1" type="button">Calificar</button>
-      <div id="activity1Result"></div>
-    </div>
-  </div>
-
-  <div class="modal hidden" id="activity2Modal" role="dialog" aria-modal="true">
-    <div class="modal-window large-window">
-      <button class="close-btn" id="closeActivity2" type="button" aria-label="Cerrar actividad">×</button>
-      <h2>Actividad 2: Verdadero o falso</h2>
-      <p class="instruction">Marca verdadero o falso y presiona “Calificar”.</p>
-      <form id="activity2Form" class="quiz-form"></form>
-      <button class="grade-btn" id="gradeActivity2" type="button">Calificar</button>
-      <div id="activity2Result"></div>
-    </div>
-  </div>
+  <button class="top-button" id="topButton" type="button" aria-label="Volver al inicio">↑</button>
 </body>
 </html>

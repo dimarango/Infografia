@@ -1,0 +1,6 @@
+Guarda en esta carpeta tu fotografía con el nombre exacto:
+
+foto-diana.jpg
+
+No necesitas modificar el código. Al actualizar el navegador, la fotografía
+reemplazará automáticamente el marcador circular del encabezado.
