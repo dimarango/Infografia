@@ -1,0 +1,7 @@
+IMAGEN: MI YO IDEAL
+Herramienta: Imagegen, generador integrado de imágenes con IA.
+Tipo: ilustración simbólica de una proyección futura, no retrato exacto.
+Archivo: assets/yo-ideal-ia.png
+
+PROMPT UTILIZADO
+Use case: illustration-story. Asset type: illustration for a Spanish personal life project website, future ideal self. Create a polished editorial digital illustration in portrait composition of a confident adult Colombian woman, symbolic representation of Diana Arango (not an exact portrait), teaching and working in technology, data analysis and accounting. She stands centrally with relaxed confident posture, friendly expression, dark shoulder-length hair, smart casual teal blazer, holding a slim laptop. Surround her with an integrated imaginative scene: a laptop showing abstract code, elegant data charts and accounting grids without legible text, a small group of adult students listening, books, a sketchbook and a plant suggesting creativity and balanced wellbeing. A rising golden pathway signifies steady academic and professional growth, collaboration and economic independence. Sophisticated navy blue, teal, warm gold, coral and ivory palette, warm soft light, artistic illustration with subtle paper texture, visually calm and inspiring. No slogans, no labels, no watermark. Represent skills and agency, no glamour or beauty transformation. This is a future aspiration, not an assertion of achieved credentials.
